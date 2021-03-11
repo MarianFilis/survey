@@ -1,0 +1,101 @@
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Ankieta</title>
+        <meta name="description" content="Ankieta">
+        <meta name="author" content="MarianFilis">
+        <meta http-equiv="X-Ua-Compatibile" content="IE=Edge, chrome=1">
+        <link rel="stylesheet" href="survey.css">
+        <script scr="suvery.js"></script>
+    </head>
+    <body>
+    <!DOCTYPE html>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Ankieta</h1>
+                <p id="description" class="description text-center">...(po co ta ankieta?)...</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Imię:</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Wprowadź swoje imię" required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Wprowadź swój e-mail" required="">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Wiek<span class="clue">(opcjonalnie)</span>:</label>
+                    <input id="number" class="form-control" type="number" name="age" min="10" max="100" placeholder="Podaj swój wiek">
+                </div>
+                <div class="form-group">
+                    <p>...(opcja)...</p>
+                    <select id="dropdown" class="form-control" name="option" required="">
+                        <option disabled="" selected="" value="">...(wybierz jedną z opcji)...</option>
+                        <option value="A">...(A)...</option>
+                        <option value="B">...(B)...</option>
+                        <option value="C">...(C)...</option>
+                        <option value="D">...(D)...</option>
+                        <option value="E">...(E)...</option>
+                        <option value="F">...(F)...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>...(jeden z trzech)...</p>
+                    <label>
+                        <input class="input-radio" name="choice" value="1st" type="radio" checked="">...(1st)...
+                    </label>
+                    <label>
+                        <input class="input-radio" name="choice" value="2nd" type="radio">...(2nd)...
+                    </label>
+                    <label>
+                        <input class="input-radio" name="choice" value="3rd" type="radio">...(3rd)...
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>...(wielokrotny wybór)...<span class="clue">(wybierz kilka jeśli musisz)</span></p>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="a" type="checkbox">...(a)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="b" type="checkbox">...(b)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="c" type="checkbox">...(c)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="d" type="checkbox">...(d)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="e" type="checkbox">...(e)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="f" type="checkbox">...(f)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="g" type="checkbox">...(g)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="h" type="checkbox">...(h)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="i" type="checkbox">...(i)...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="multichoice" value="j" type="checkbox">...(j)...
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Wyślij komentarz lub sugestię:</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="zacznij wpisywać tutaj..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" class="submit-button" type="submit"><strong>Wyślij!</strong></button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer>
+        &copy
+    </footer>
+</html>
